@@ -1,0 +1,20 @@
+<div>
+  <p>news works!</p>
+
+  <div class="container" >
+    <div>
+      {{news | json }}
+      <div class="card" *ngFor="let item of news | keyvalue">
+          {{ item.key }} = {{ item.value | json }}
+        <!-- <img src="{{ item.titleImageUrl }}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.categoryType }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <a href="{{ item.fullUrl }}" class="btn btn-primary">Go somewhere</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
